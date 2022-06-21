@@ -16,8 +16,21 @@ $(function() {
 });
 //End Replace Text function
 
-$('.carousel').carousel({
-    interval: 2000,
-    cycle: true,
-    pause: null
-})
+//Replace Text function		 
+$(function() {
+    count = 0;
+    aboutArray = ["Roll No. 22", "Yash UG Shejwal", "from SY-CS-D"];
+    setInterval(function() {
+        count++;
+        $("#about-phrase").fadeOut(500, function() {
+            $(this).text(aboutArray[count % aboutArray.length]).fadeIn(500);
+        });
+    }, 1000);
+});
+//End Replace Text function
+
+// $('.carousel').carousel({
+//     interval: 2000,
+//     cycle: true,
+//     pause: null
+// })

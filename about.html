@@ -46,25 +46,40 @@ ssion_start();
 
 <body>
     <div class="header">
-        <nav>
-            <div class="logo"><span><span style="font-size: 45px;">S</span>plit</span><span style="font-size: 45px; color: white;">I</span>t!</div>
-            <input type="checkbox" id="check">
-            <label for="check">
-    <i class="fas fa-bars" id="btn"></i>
-    <i class="fas fa-times" id="cancel"></i>
-                </label>
-
-            <ul class="navlinks" style="margin-left: -500px;">
-                <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="#">Split</a></li>
-                    <li><a href="#">Groups</a></li> -->
-                <li><a href="#">Transactions</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">ContactUs</a></li>
-                <li class="btn2"><a href="expense.html">+ | New Expense</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class=" navbar-brand logo"><span><span style="font-size: 45px;">S</span>plit</span><span style="font-size: 45px; color: white;">I</span>t!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="collapseExample">
+                <ul class="navbar-nav ms-auto navlinks">
+                    <li class="nav-item">
+                        <a id="big" class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="big" class="nav-link" href="#">Transactions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="big" class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="big" class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item btn2">
+                        <a class="nav-link" href="expense.html">+ | New Expense</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <div class="row">
+            <div class="col-md-6 heading-phrase">
+                <h1 class="phrase" style="color: white;">This Website is a Project Created by: </h1>
+            </div>
 
+            <div class="col-md-6 heading-phrase">
+                <h1> <span id="about-phrase" class="changing-phrase auto-input"></span></h1>
+            </div>
+        </div>
 
 
 
