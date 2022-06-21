@@ -15,3 +15,9 @@ $(function() {
     }, 5000);
 });
 //End Replace Text function
+
+$('.carousel').carousel({
+    interval: 2000,
+    cycle: true,
+    pause: null
+})

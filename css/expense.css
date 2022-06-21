@@ -3,12 +3,14 @@
  .content {
      position: absolute;
      left: 50%;
-     top: 40%;
+     top: 90%;
      width: 90%;
      max-width: 700px;
      transform: translate(-50%, -50%);
      text-align: center;
-     color: white;
+     /* color: white; */
+     color: #5F7161;
+     font-size: 1.5rem;
  }
  
  .content h1 {
@@ -18,18 +20,21 @@
  }
  
  .content form {
-     background: #fff;
+     background: #D0C9C0;
      padding: 10px;
      border-radius: 8px;
-     display: flex;
+     /* display: flex; */
  }
  
  .content form input {
      flex: 1;
      border: none;
      outline: none;
-     padding: 0 20px;
+     /* padding: 15px 20px; */
+     padding: 3%;
+     margin: 1%;
      font-size: 18px;
+     border-radius: 8px;
  }
  
  .content form button {
@@ -43,8 +48,46 @@
  }
  
  .content form button:hover {
-     border: 1px solid #6D8B74;
-     background: #6D8B74;
+     border: 1px solid #5F7161;
+     background: #5F7161;
      transition: 1s;
      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 2.5);
+ }
+ 
+ .main-input {
+     margin: 0 10% !important;
+ }
+ 
+ .flextype {
+     /* display: flex; */
+     display: inline-block;
+ }
+ 
+ .small-font {
+     font-size: 1.25rem;
+ }
+ 
+ .form-check {
+     text-align: center;
+     margin: auto;
+ }
+ 
+ .green-background {
+     background-color: #6D8B74;
+ }
+ 
+ .green-background::placeholder {
+     color: #EFEAD8;
+     opacity: 1;
+     /* Firefox */
+ }
+ 
+ .green-background:-ms-input-placeholder {
+     /* Internet Explorer 10-11 */
+     color: #EFEAD8;
+ }
+ 
+ .green-background::-ms-input-placeholder {
+     /* Microsoft Edge */
+     color: #EFEAD8;
  }

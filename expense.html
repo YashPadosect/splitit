@@ -46,23 +46,89 @@
                 </label>
 
             <ul class="navlinks" style="margin-left: -500px;">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Split</a></li>
-                <li><a href="#">Groups</a></li>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#">Split</a></li>
+                <li><a href="#">Groups</a></li> -->
                 <li><a href="#">Transactions</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">ContactUs</a></li>
-                <li class="btn2"><a href="#">+ | New Expense</a></li>
+                <li class="btn2"><a href="expense.html">+ | New Expense</a></li>
             </ul>
         </nav>
 
         <div class="content">
-            <h1 style="color: white;">Let's Be Organized..</h1>
+            <h1 style="color: white;">Let's Be Organized...</h1>
             <form action="">
-                <input type="text" placeholder="&#x270e; Enter Amount : ">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="&#x270e; Enter Amount: ">
+                    </div>
+                    <div class="col">
+                        <div class="form-group col-md-4 flextype">
+                            <label for="inputType">What's this for?</label>
+                            <select id="inputType" class="form-control">
+                              <option selected>Other</option>
+                              <option>Travel</option>
+                              <option value="">Shopping</option>
+                              <option value="">Food</option>
+                              <option value="">Entertainment</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check col-md-4 flextype">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label small-font" for="gridCheck">
+                              Divide equally
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="form-group"> -->
+                <!-- <input class="form-control main-input" type="text" placeholder="&#x270e; Enter Amount: "> -->
+                <!-- <input class="main-input" type="text" placeholder="&#x270e; Enter Amount: ">
+                    <button type="submit">Proceed</button>
+                </div> -->
+                <!-- <br> -->
+
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Name of First Person:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the name">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Name of Second Person:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter the name">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Name of Third Person:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the name">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Name of Forth Person:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the name">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Name of Fifth Person:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the name">
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Paid By:</label>
+                    <input type="text" class="form-control green-background" id="formGroupExampleInput" placeholder="Enter the name">
+                </div>
                 <button type="submit">Proceed</button>
             </form>
         </div>
+
+        <!-- <div class="expense-form">
+            <form>
+                <input type="text" placeholder="&#x270e; Enter Name 1: ">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+            </form>
+
+        </div> -->
 
     </div>
     </div>

@@ -13,19 +13,19 @@
     
     body {
         background-image: url("../images/back.jpg");
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     
     .logo {
-        margin: 0 50px;
-        margin-top: 10px;
-        height: 60px;
-        float: left;
-        color: #fff;
-        font-size: 35px;
-        text-transform: capitalize;
-        font-weight: bold;
-        letter-spacing: 0px;
+        margin: 0 50px !important;
+        margin-top: 10px !important;
+        height: 60px !important;
+        float: left !important;
+        color: #fff !important;
+        font-size: 35px !important;
+        text-transform: capitalize !important;
+        font-weight: bold !important;
+        letter-spacing: 0px !important;
     }
     
     .logo span {
@@ -33,43 +33,47 @@
     }
     
     nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-right: 50px;
-        word-spacing: 6px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding-right: 50px !important;
+        word-spacing: 6px !important;
     }
     
     .navlinks {
-        padding: 28px 0;
+        padding: 28px 0 !important;
     }
     
     .navlinks li {
-        display: inline-block;
-        margin: 0 7px;
+        display: inline-block !important;
+        margin: 0 7px !important;
     }
     
     .navlinks li a {
-        text-decoration: none;
-        color: #fff;
-        padding: 5px 0;
-        position: relative;
-        font-size: 16px;
+        text-decoration: none !important;
+        color: #fff !important;
+        padding: 5px 0 !important;
+        position: relative !important;
+        font-size: 16px !important;
     }
     
     .navlinks li a::after {
-        content: ' ';
+        content: ' ' !important;
         background: #fff;
-        width: 0;
-        height: 2px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transition: width 0.5s;
+        width: 0 !important;
+        height: 2px !important;
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        transition: width 0.5s !important;
     }
     
     .navlinks li a:hover::after {
-        width: 100%;
+        width: 100% !important;
+    }
+    
+    .nav-link {
+        font-size: 100px !important;
     }
     
     label #btn,
@@ -118,7 +122,7 @@
     /* new expense */
     
     .btn2 {
-        background: #6D8B74;
+        background: #5F7161;
         color: #EFEAD8;
         padding: 10px 25px;
         border-radius: 3px;
@@ -126,16 +130,22 @@
     }
     
     .btn2:hover {
-        border: 1px solid #6D8B74;
-        background: #6D8B74;
+        border: 1px solid #5F7161;
+        background: #5F7161;
         transition: 1s;
         box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
     }
     /* catchy phrase */
     
+    .heading-phrase {
+        margin: auto;
+    }
+    
     .phrase {
         /* margin-left: 43%; */
         text-align: left;
+        /* margin: auto;
+        margin-top: auto; */
     }
     
     .changing-phrase {
@@ -145,7 +155,7 @@
     .row {
         /* margin-top: 5%; */
         margin: 5% 19%;
-        display: flex;
+        display: flex !important;
         justify-content: space-between;
     }
     
@@ -154,9 +164,9 @@
     }
     
     @media(max-width:900px) {
-        .row {
+        /* .row {
             flex-direction: column;
-        }
+        } */
         .header-content h1 {
             font-size: 25px;
             margin-top: -15px;
@@ -165,6 +175,18 @@
         .header-content p {
             font-size: 20px;
             margin-bottom: 0;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .heading-phrase h1 {
+            text-align: center !important;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .btn2 {
+            max-width: 190px;
         }
     }
     
