@@ -72,8 +72,9 @@
         width: 100% !important;
     }
     
-    .nav-link {
-        font-size: 100px !important;
+    #big {
+        font-size: 1.15rem !important;
+        /* color: blue !important; */
     }
     
     label #btn,

@@ -25,7 +25,7 @@ $(function() {
         $("#about-phrase").fadeOut(500, function() {
             $(this).text(aboutArray[count % aboutArray.length]).fadeIn(500);
         });
-    }, 1000);
+    }, 2000);
 });
 //End Replace Text function
 
